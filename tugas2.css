@@ -17,15 +17,15 @@ nav {
     display: flex;
     gap: 30px;
     justify-content: center;
-    opacity: 0; /* Awal transparan */
+    opacity: 0;
     animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 1.5s; /* Muncul setelah slide-out */
+    animation-delay: 1.5s;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 nav:hover {
-    transform: scale(1.05); /* Membesarkan navbar saat hover */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Bayangan saat hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 nav a {
@@ -38,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #507d91; /* Warna hover ombak */
+    background-color: #507d91;
 }
 
 /* Animasi Slide Opening */
@@ -62,7 +62,6 @@ nav a:hover {
     }
 }
 
-/* Animasi Fade In */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -74,17 +73,17 @@ nav a:hover {
 
 /* Konten Utama */
 main {
-    padding: 0 20px; /* Memberikan ruang di kiri dan kanan */
-    max-width: 1200px; /* Mengatur lebar maksimum konten */
-    margin: 0 auto; /* Menjaga konten tetap di tengah */
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Section */
 section {
     padding: 20px;
-    margin-top: 30px; /* Jarak dari elemen sebelumnya */
-    background-color: #f4f4f4; /* Memberikan latar belakang agar lebih menonjol */
-    border-radius: 8px; /* Memberikan sudut yang lebih lembut */
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
 }
 
 /* Tabel */
@@ -178,4 +177,16 @@ code {
     section {
         padding: 10px;
     }
+}
+
+/* ✅ Tambahan: Responsif Tabel */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+}
+
+.table-responsive table {
+    min-width: 600px;
 }
